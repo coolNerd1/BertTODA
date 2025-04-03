@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK Barangay San Isidro - Contact</title>
+    <style>
+	html, body {
+    height: 100vh; /* Make sure the body takes the full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+	
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f2;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 0px 50px;
+            border-top: 60px solid #fdd8ef;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header img {
+            padding-left: 20px;
+            height: 80px;
+            margin-right: 15px;
+        }
+
+        .header .logo-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header .logo-text .title {
+            color: #ff1493;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .header .logo-text .header-line {
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            margin-bottom: 5px;
+        }
+
+        .header .logo-text .subtitle {
+            color: black;
+            font-size: 20px;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ff1493;
+        }
+
+        /* CONTACT FORM */
+		.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensures the whole page fits in the viewport */
+}
+
+.contact-container {
+    flex-grow: 1; /* Ensures it takes available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Ensures white background */
+    min-height: 65vh; /* Slightly taller to fit form */
+}
+
+.contact-form {
+    background-color: white;
+    padding: 15px; /* Increased padding for more space */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* Increased width */
+    max-height: 60vh; /* Increased height */
+    overflow-y: auto;
+}
+
+.contact-form h1 {
+    text-align: center;
+    color: #ff1493;
+    margin-bottom: 10px;
+    font-size: 20px; /* Slightly larger text */
+}
+
+.form-group {
+    margin-bottom: 6px; /* Less spacing between fields */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 2px;
+    color: #333;
+    font-size: 10px; /* Smaller label text */
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 6px; /* Increased padding */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 12px; /* Increased text size */
+}
+
+.privacy-note {
+    font-size: 11px; /* Smaller text */
+    color: #666;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.consent-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.consent-group input[type="checkbox"] {
+    margin-right: 6px; /* Reduced spacing */
+    width: auto;
+}
+
+.consent-group label {
+    font-size: 10px; /* Smaller label */
+    margin: 0;
+}
+
+.submit-btn {
+	height: 29px;
+    width: 100%;
+    padding: 6px; /* Slightly smaller button */
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px; /* Smaller button text */
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e6008a;
+}
+
+        .contact-info {
+            margin-top: 10px;
+            text-align: center;
+            background-color: white;
+            padding: 8px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+
+        .contact-info h2 {
+            color: #ff1493;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+     .pink-footer {
+    background-color: #ffe6f2;
+    height: 58px;
+    width: 100%;
+    position: fixed; /* Keeps it always at the bottom */
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+	padding-left: 1460px;
+    padding-right: 10px; /* Adds space from the right edge */
+}
+
+        .facebook-icon {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .facebook-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-text {
+            color: #ff1493;
+            margin-top: 5px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="header-left">
+                <img src="484390836_568791642836130_8893519398633362676_n.png" alt="SK Logo">
+                <div class="logo-text">
+                    <div class="title">SANGGUNIANG KABATAAN</div>
+                    <div class="header-line"></div>
+                    <div class="subtitle"><strong>BARANGAY SAN ISIDRO</strong></div>
+                </div>
+            </div>
+            
+            <!-- Navigation Bar -->
+            <div class="navbar">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">OFFICIALS</a>
+                <a href="#">NEWS</a>
+                <a href="#">PROJECTS</a>
+                <a href="#">CONTACT</a>
+            </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="contact-container">
+            <div class="contact-form">
+                <h1>CONTACT US</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="name">YOUR NAME:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">YOUR AGE:</label>
+                        <input type="number" id="age" name="age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">YOUR ADDRESS:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">YOUR MESSAGE:</label>
+                        <textarea id="message" name="message" rows="3" required></textarea>
+                    </div>
+                    <div class="privacy-note">
+                        DATA PRIVACY ACT OF 2012 (RA 10173) 
+                        THE SK WILL PROTECT ALL DATA IN ACCORDANCE WITH THE PHILIPPINE DATA PRIVACY ACT OF 
+                        2012 (RA 10173). ENSURING THAT PERSONAL INFORMATION, E.G. NAME, AGE, ADDRESS REMAINS 
+                        CONFIDENTIAL AND IS DISCLOSED ONLY WITH THE RESPONDENT'S CONSENT.
+                    </div>
+                    <div class="consent-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I AGREE TO SUBMIT MY INQUIRY AND MY INFORMATION</label>
+                    </div>
+                    <button type="submit" class="submit-btn">SUBMIT</button>
+                </form>
+                
+                <div class="contact-info">
+                    <h2>SK NG BRGY. SAN ISIDRO</h2>
+                    <p>ADDRESS</p>
+                    <p>EMAIL: SKBRGY.SANISIDRO@GMAIL.COM</p>
+                    <p>PHONE: SAMPLE</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pink-footer">
+            <div class="footer-content">
+                <a href="https://www.facebook.com/profile.php?id=61558564268130" target="_blank">
+                    <img src="C:\Users\Vincent\OneDrive\Documents\AA BERT TODA\face.png" alt="Facebook" class="facebook-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
